@@ -1,3 +1,4 @@
+Name,Gender,Age,Personality,OS,Min,Max
 Ada Lovelace,F,96,ISTJ,Linux,24,99
 Adele Goldberg,F,65,ENFJ,Windows,50,70
 Alan Turing,M,41,ESTP,Mac OS X,31,50
@@ -50,4 +51,3 @@ Valentina Tereshkova,F,71,ENTJ,Mac OS X,55,65
 Vint Cerf,M,67,ISFP,Mac OS X,28,55
 Yukihiro Matsumoto,M,45,ENTP,Mac OS X,10,25
 Zelda,F,59,ESTP,Windows,40,62
-Alessio Rizzi,M,25,ESTJ,Mac OS X,18,60
