@@ -15,7 +15,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
         $movie=$_GET["film"];
         list($title, $year, $rating) = file("$movie/info.txt", FILE_IGNORE_NEW_LINES);
         ?>
-<body>
+        <body>
         <div class="banner">
             <img src="http://www.cs.washington.edu/education/courses/cse190m/11sp/homework/2/banner.png"
                  alt="Rancid Tomatoes" />
@@ -34,12 +34,13 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
                         <?php
                         $overview = file("$movie/overview.txt", FILE_IGNORE_NEW_LINES);
                         foreach ($overview as $lines){
-                        list($term, $description) = explode(":", $lines);?>
-                        <dl>
-                            <dt><?=$term?></dt>
-                            <dd><?=$description?></dd>
-                        </dl>
-                        <?php }
+                            list($term, $description) = explode(":", $lines);?>
+                            <dl>
+                                <dt><?=$term?></dt>
+                                <dd><?=$description?></dd>
+                            </dl>
+                            <?php
+                        }
                         ?>
                     </div>
                 </div>
@@ -91,7 +92,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
                     </div>
                     <div class="column">
                         <?php
-                        for($i = round($numReviews/2); $i<$numReviews; $i++){
+                        for($i = (int)round($numReviews/2); $i<$numReviews; $i++){
                             list($review, $reviewRating, $reviewer, $magazine) = file("$reviews[$i]", FILE_IGNORE_NEW_LINES);
                             ?>
                             <div class="citazione">
@@ -131,8 +132,8 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
             </a>
         </div>
 
-</body>
-    <?php
+        </body>
+        <?php
     }
 }
 ?>

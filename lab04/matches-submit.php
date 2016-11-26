@@ -28,7 +28,7 @@
         }
     }
 //    var_dump($matches);
-    
+
     function compatibility($p1, $p2){
         $result = false;
         for($i=0; $i < 4; $i++){
@@ -48,10 +48,10 @@
                     <?=$x?>
                 </p>
                 <ul>
-                    <li>gender: <?=$xs[1]?></li>
-                    <li>age: <?=$xs[2]?></li>
-                    <li>type: <?=$xs[3]?></li>
-                    <li>OS: <?=$xs[4]?></li>
+                    <li class="column"><strong>gender:</strong></li><li><?=$xs[1]?></li>
+                    <li class="column"><strong>age</strong> </li><li><?=$xs[2]?></li>
+                    <li class="column"><strong>type:</strong></li><li><?=$xs[3]?></li>
+                    <li class="column"><strong>OS:</strong></li><li><?=$xs[4]?></li>
                 </ul>
             </div>
             <?php

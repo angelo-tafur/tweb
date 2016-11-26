@@ -35,7 +35,7 @@
 
             <div>
                 <label class="left"><strong>Personality type:</strong></label>
-                <input list="personalities" title="personality" type="text" name="personality" size="6" maxlength="4">(
+                <input title="personality" type="text" name="personality" size="6" maxlength="4">(
                 <a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp">Don't know your type? </a>)
             </div>
 

@@ -51,7 +51,7 @@ fieldset {
 fieldset strong,
 ul strong,
 fieldset label.left,
-fieldset .column {
+.column {
 	float: left;
 	width: 11em;
 }
