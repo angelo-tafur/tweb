@@ -1,15 +1,7 @@
 <?php include("top.html"); ?>
 
 <?php
-/**
- * Created by PhpStorm.
- * User: m_laurenz
- * Date: 16/11/16
- * Time: 17.59
- * la pagina che riceve i dati inviati da matches.php e che mostra chi sono le persone a lui/lei affini.
- */?>
 
-<?php
     $myFile = fopen("singles.txt", "r");
     $mySingles = array();
     while(!feof($myFile)){
